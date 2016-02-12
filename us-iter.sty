@@ -1,0 +1,21 @@
+\usepackage{graphicx}
+
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \includegraphics[width=6.5in]{US-ITER-Header.jpg}
+
+    {\Huge\textbf{\expandafter\expandafter{\@title}}} \vspace*{1in}
+
+    \@author \vspace*{1in}
+
+    \@date 
+  \end{titlepage}
+  \setcounter{footnote}{0}
+  \setcounter{page}{1} %title page is NOT counted
+  \let\thanks\relax
+  \let\maketitle\relax \let\degree\relax \let\project\relax \let\prelim\relax
+  \let\department\relax
+  \gdef\@thanks{}\gdef\@degree{}\gdef\@doctype{}
+  \gdef\@department{}
+  %\gdef\@author{}\gdef\@title{}
+}
